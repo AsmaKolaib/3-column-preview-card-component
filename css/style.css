@@ -1,0 +1,119 @@
+/* Variables */
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --very-light-gray:hsl(0, 0%, 95%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+/* ----- */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;    
+}
+body{
+    background-color: var(--very-light-gray);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container{
+    padding: 20px 200px;
+    min-height: 97vh;
+    max-width: 900vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    color :var(--transparent-white);
+    line-height: 2;   
+}
+ h1{
+    color:white;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.card{
+    padding: 30px;
+}
+.card img{
+    margin-bottom: 25px;
+}
+.card h1{
+    margin-bottom: 25px;
+}
+.card p{
+    margin-bottom: 80px;
+}
+/* Card's Color Style */
+.orange{
+    background-color: var(--bright-orange);
+    border-radius:  10px 0 0 10px ;
+ 
+}
+.darkCyan{
+    background-color: var(--dark-cyan);
+}
+.veryDarkCyan{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+
+}
+/* ----- */
+/* Buttom  Style */
+.btn{
+    padding: 10px 20px;
+    text-transform: capitalize;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+.orange .btn {
+    color: var(--bright-orange);  
+}
+.darkCyan .btn {
+    color: var(--dark-cyan);
+}
+.veryDarkCyan .btn{
+    color: var(--very-dark-cyan);
+}
+.btn:hover{
+    background-color: transparent;
+    color: white;
+    }
+/* ----- */
+/* Attribution Style */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+/* ----- */
+/* Mobile */
+@media (min-width: 375px) and (max-width: 768px) {
+    .container{
+        margin-top: 50px;
+        padding: 5px 20px;
+        flex-direction: column; /* Column layout */
+    }
+    .orange{
+        border-radius:  10px 10px 0 0 ;
+    }
+ 
+    .veryDarkCyan{
+        border-radius: 0 0px 10px 10px;
+    }
+    .card{
+        padding: 80px;
+    }
+    .card p{
+        margin-bottom: 40px;
+    }
+}
